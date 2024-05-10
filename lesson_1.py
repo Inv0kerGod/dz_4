@@ -10,10 +10,10 @@ frukt.info()
 #2
 class Heroes:
     def __init__(self, name, health, role, rasa):  
-        self.name = name.strip('- ,')  
-        self.health = int(health.strip('- ,'))  
-        self.role = role.strip('- ,') 
-        self.rasa = rasa.strip('- ,')  
+        self.name = name
+        self.health = health
+        self.role = role
+        self.rasa = rasa
 
     def info(self):
         print(f'имя {self.name}, хп {self.health}, роль {self.role}, раса {self.rasa}')
@@ -27,9 +27,9 @@ class Heroes:
             self.health - damage_amount 
             print(f"{self.name} потеряла {damage_amount} хп")
 
-info1 = Heroes("Нурдан", "100", "колдун", "человек")
-info2 = Heroes("сестра Нурдана", "50", "змея", "ящеры")
-info3 = Heroes("младшая сестра нурдана", "70", "зомби", "человек")
+info1 = Heroes("Нурдан", 100, "колдун", "человек")
+info2 = Heroes("сестра Нурдана", 50, "змея", "ящеры")
+info3 = Heroes("младшая сестра нурдана", 70, "зомби", "человек")
 
 info1.info()
 info2.info()

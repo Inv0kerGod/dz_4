@@ -20,6 +20,8 @@ class Teacher(Person):
 teacher = Teacher("роман",20,3)
 teacher.introduce_myself
 teacher.sumSalary(10)
+
+
         
     
         
